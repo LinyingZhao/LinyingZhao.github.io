@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "这是姓名"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "这是一个介绍"
+  location         : "广东"
+  employer         : "华南理工大学"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "123456789@qq.com" 
 
   # Academic websites
   academia         : # URL
