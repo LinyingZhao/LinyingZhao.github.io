@@ -23,24 +23,24 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "这是姓名"
-  pronouns         : # example: "she/her"  
-  bio              : "这是一个介绍"
+  avatar           : "yufeicao.jpg"
+  name             : "曹宇飞"
+  pronouns         : "他"  
+  bio              : "副教授"
   location         : "广东"
   employer         : "华南理工大学"
-  uri              : # URL
-  email            : "123456789@qq.com" 
+  uri              : "https://www2.scut.edu.cn/sp/2023/1012/c11282a521244/page.htm"
+  email            : "yufeicao@scut.edu.cn" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=3ebq8z8AAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : #
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -48,7 +48,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : #"academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
