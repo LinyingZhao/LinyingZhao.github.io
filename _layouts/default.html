@@ -1,30 +1,40 @@
 ---
+# 默认布局模板
+# 这是网站的基础布局文件，所有其他布局都基于此文件
+# layout: 使用压缩布局（HTML 压缩）
 layout: compress
 ---
 
-{% include base_path %}
+{% include base_path %} <!-- {# 包含基础路径变量 #} -->
 
 <!doctype html>
+<!-- {# HTML 文档声明和语言设置 #} -->
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <!-- {# 网页头部：包含元数据、SEO、CSS 等 #} -->
+    {% include head.html %}  <!-- {# 基础头部内容 #} -->
+    {% include head/custom.html %}  <!-- {# 自定义头部内容 #} -->
   </head>
 
   <body>
-
+    <!-- {# 浏览器升级提示（针对旧版浏览器） #} -->
     {% include browser-upgrade.html %}
+
+    <!-- {# 网站导航栏/顶部栏 #} -->
     {% include masthead.html %}
 
+    <!-- {# 页面主要内容区域 #} -->
     {{ content }}
 
+    <!-- {# 页脚区域 #} -->
     <div class="page__footer">
       <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
+        {% include footer/custom.html %}  <!-- {# 自定义页脚内容 #} -->
+        {% include footer.html %}  <!-- {# 标准页脚内容 #} -->
       </footer>
     </div>
 
+    <!-- {# JavaScript 脚本文件 #} -->
     {% include scripts.html %}
 
   </body>

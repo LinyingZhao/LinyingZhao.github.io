@@ -1,24 +1,40 @@
-{% include base_path %}
+<!-- {# 
+   网站导航栏（Masthead）模板
+   此文件定义了网站顶部的导航栏结构
+#}
+
+{% include base_path %}  {# 包含基础路径变量 #} -->
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      <!-- {# 主导航栏 #} -->
       <nav id="site-nav" class="greedy-nav">
+        <!-- {# 移动端菜单按钮 #} -->
         <button><span class="navicon"></span></button>
+        <!-- {# 可见的导航链接列表 #} -->
         <ul class="visible-links">
+          <!-- {# 网站标题/Logo（始终显示） #} -->
           <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <!-- {# 循环遍历导航菜单项（从 _data/navigation.yml 读取） #} -->
           {% for link in site.data.navigation.main %}
+            <!-- {# 判断是否为外部链接（包含 http） #} -->
             {% if link.url contains 'http' %}
-              {% assign domain = '' %}
+              {% assign domain = '' %}  <!-- {# 外部链接不需要添加基础路径 #} -->
+              {% assign target_attr = 'target="_blank" rel="noopener noreferrer"' %} <!-- {# 外部链接在新标签页打开 #} -->
             {% else %}
-              {% assign domain = base_path %}
+              {% assign domain = base_path %}  <!-- {# 内部链接需要添加基础路径 #} -->
+              {% assign target_attr = '' %}  <!-- {# 内部链接在当前页面打开 #} -->
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <!-- {# 渲染导航菜单项 #} -->
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" {{ target_attr }}>{{ link.title }}</a></li>
           {% endfor %}
+          <!-- {# 主题切换按钮（亮色/暗色模式） #} -->
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
         </ul>
+        <!-- {# 隐藏的导航链接（移动端菜单折叠时使用） #} -->
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>

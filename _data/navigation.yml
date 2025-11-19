@@ -1,33 +1,41 @@
-# The following is the order of the links in the header of the website.
+# ============================================================================
+# 网站导航菜单配置
+# ============================================================================
+# 
+# 此文件控制网站头部导航栏的链接顺序和内容。
+# 
+# 使用说明：
+# - 修改此处的顺序会改变导航栏中链接的显示顺序
+# - 可以添加额外的链接项
+# - 删除某个链接会阻止它在导航栏中显示，但不会阻止页面本身存在于网站中
 #
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# 注意：
+# - CV（简历）选项只能选择一个，第一个是 Markdown 格式的页面，
+#   第二个是使用 JSON 生成的页面
+# ============================================================================
 
-main:
-  - title: "Publications"
-    url: /publications/
+main:  # 主导航菜单项
+  - title: "Publications"  # 导航项标题：出版物
+    url: /publications/  # 链接地址：出版物列表页面
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Talks"  # 导航项标题：演讲/报告
+    url: /talks/  # 链接地址：演讲列表页面
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "Teaching"  # 导航项标题：教学
+    url: /teaching/  # 链接地址：教学内容页面
     
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Portfolio"  # 导航项标题：作品集
+    url: /portfolio/  # 链接地址：作品集页面
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Blog Posts"  # 导航项标题：博客文章
+    url: /year-archive/  # 链接地址：按年份归档的博客列表
     
-  - title: "CV"
-    url: /cv/
+  - title: "CV"  # 导航项标题：简历
+    url: https://www.baidu.com  # 链接地址：外部链接（示例，请修改为实际简历链接）
     
+  # 备选 CV 选项（已注释）：使用 JSON 生成的简历页面
   # - title: "CV"
   #   url: /cv-json/
     
-  - title: "Guide"
-    url: /markdown/
+  - title: "Guide"  # 导航项标题：指南
+    url: /markdown/  # 链接地址：Markdown 使用指南页面
