@@ -16,7 +16,7 @@ title                    : "Your Name / Site Title"  # 网站标题，显示在�
 title_separator          : "-"  # 标题分隔符
 name                     : &name "Your Name"  # 网站名称别名
 description              : &description "Your Name's academic portfolio"   # 网站描述，用于 SEO 和社交媒体分享
-url                      : https://academicpages.github.io # 网站基础 URL，例如："https://[你的GitHub用户名].github.io"
+url                      : https://linyingzhao.github.io/ # 网站基础 URL，例如："https://[你的GitHub用户名].github.io"
                                                            # 如果使用子目录，格式："https://[你的GitHub用户名].github.io/[仓库名]"
 baseurl                  : "" # 网站子路径，例如 "/blog"（如果网站不在根目录）
 repository               : "academicpages/academicpages.github.io"  # GitHub 仓库地址
